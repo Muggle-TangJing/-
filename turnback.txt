@@ -1,0 +1,10 @@
+if(document.referrer){
+		var url = document.referrer
+		$('#return_link').click(function () {
+			$(location).attr('href', url);
+		});			
+		if(url.indexOf("factory") > 0){
+			$('#factory_list').addClass('active').children('b').addClass('active')
+		}else{
+			$('#cooperative_list').addClass('active').children('b').addClass('active')
+		}
