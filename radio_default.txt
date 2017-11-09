@@ -1,0 +1,8 @@
+//单选框 or 复选框动态加载默认选中事件
+var tag1_checked = '';
+var tag2_checked = '';
+var tag3_checked = '';
+
+if (equipmentTypeId == 1){tag1_checked = 'checked';}else if (equipmentTypeId == 2){tag2_checked = 'checked';}else if (equipmentTypeId == 3){tag3_checked = 'checked';}
+动态加载内容
+var tmp_detail_html = "<p  id="choose_type"><span class="tlj"><input type="radio" name="radio1"  value="1" ' + tag1_checked + '> 拖拉机</span><span class="zbj"><input type="radio" name="radio1"  value="2" ' + tag2_checked +' > 植保机</span><span class="sgj"><input type="radio" name="radio1" value="3" ' + tag3_checked +'> 收割机<span></p>"
